@@ -77,11 +77,19 @@ header{
         }
 
         .div3{
+            align-self: center;
+            // height: 100%;
             display: none;
+            filter: invert(1);
 
-            // @media (max-width:600px) {
-                
-            // }
+            @media (max-width:600px) {
+                display: block;
+                align-self: stretch;
+                height: 50px;
+                margin-top: 17px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
         }
     }
     @media (max-width:600px) {
@@ -155,7 +163,18 @@ main{
     p{
         padding: 0px 50px;
         font-size: 1.2rem;
+        
+        @media (max-width:600px) {
+            padding: 0px;
+            width: 100%;
+            font-size: 1rem;
+     }
     }
+    @media (max-width:600px) {
+       padding: 0px;
+       width: 100%;
+       font-size: 0.5rem;
+}
 }
 
 section{
@@ -167,11 +186,17 @@ section{
     }
 
     .p1{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .flex{
         display: flex;
         align-items: start;
+
+        @media (max-width:600px) {
+            width: 100%;
+            flex-wrap: wrap;
+     }
+
         .card{
             position: relative;
             overflow: hidden;
@@ -192,6 +217,7 @@ section{
                     top: 200px;
                     opacity: 0.0;
                 }
+                
 
                 100%{
                     position: relative;
